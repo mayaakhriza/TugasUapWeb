@@ -1,0 +1,144 @@
+<?php 
+include "koneksi.php";
+session_start();
+
+if(!isset($_SESSION['username'])) {
+header("location:login.php"); 
+}
+?>
+
+
+<html>
+<head>
+    <title>Desain Website Resep Masakan</title>
+	<link href="halamanutama/style.css" rel="stylesheet" type="text/css" media="screen"/>
+	
+</head>
+<body>
+<div id="art-main">
+		<nav class="art-nav clearfix">
+			<div class="art-nav-inner">
+				<h1 class="art-headline" data-left="0%">
+							<a href="#"><img width="268" height="39" alt="" src="halamanutama/images/logo.png"></a>
+						</h1>
+						<h2 class="art-slogan" data-left="29.48%">Kumpulan berbagai resep makanan</h2>
+				<ul class="art-hmenu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Masakan</a></li>
+				<li><a href="#">Minuman</a></li>
+				<li><a href="#">Kue</a>
+				<li><a href="logout.php"><b>Logout</b></a></li>
+				</div>
+			
+		 </nav>
+		<header class="art-header clearfix">
+					<div class="art-shapes">
+				   </div>      
+		</header>
+		<div class="art-sheet clearfix">
+			<div class="art-layout-wrapper clearfix">
+				<div class="art-content-layout">
+					<div class="art-content-layout-row">
+						<div class="art-layout-cell art-content clearfix">
+						<article class="art-post art-article">
+							<div class="art-postcontent art-postcontent-0 clearfix">
+							<div class="art-content-layout">
+								<div class="art-content-layout-row">
+								<div class="art-layout-cell layout-item-0" style="width: 50%; padding-right:380px" >
+									<h1>Resep Terbaru</h1>
+								</div>
+								<div class="art-layout-cell layout-item-0" style="width: 50%" >
+									<h1>Menu Populer</h1>
+								</div>
+								</div>
+							</div>
+							<div class="art-content-layout-wrapper layout-item-1">
+							<div class="art-content-layout layout-item-2">
+								<div class="art-content-layout-row">
+									<div class="art-layout-cell layout-item-5" style="width: 40%" >
+										<p><img width="310" height="210" src="halamanutama/images/a.jpg" alt="" class=""></p>
+										<p>Salmon dimasak dengan kecap teriyaki yang nikmat. Cocok disajikan pada malam hari.&nbsp;</p>
+										<p><a href="#">Read more...</a></p>
+									</div>
+									<div class="art-layout-cell layout-item-5" style="width: 40%" >
+										<p><img width="310" height="210" src="halamanutama/images/b.jpg" alt="" class=""></p>
+										<p>Salmon seeded mustard cocok sekali untuk dinner. Rasanya nikmat dan lezat.&nbsp;</p>
+										<p><a href="#">Read more...</a></p>
+									</div>
+									<div class="art-layout-cell layout-item-0" style="width: 30%; padding-left:10px;background:rgb(239, 239, 239);" >
+										<p><img width="97" height="97" alt="" src="halamanutama/images/e.jpg" style="padding-right:20px;float:left;"></p>
+										Thai food noodle fried noodles mea bercampur dengan toge, tahu dan daging sapi.<br clear="all">
+										<p><img width="97" height="97" alt="" src="halamanutama/images/f.jpg" style="padding-right:20px;float:left;"></p>
+										Kue terbuat dari campuran strawberry cocok untuk dessert.<br clear="all">
+										<p><img width="97" height="97" alt="" src="halamanutama/images/g.jpg" style="padding-right:20px;float:left;"></p>
+										Food spanish baked eggs bercampur dengan irisan sosis goreng yang nikmat.
+									</div>		
+								</div>
+							</div>
+							</div>
+							</div>		
+							<div class="art-postcontent art-postcontent-0 clearfix">
+							<div class="art-content-layout">
+								<div class="art-content-layout-row">
+								<div class="art-layout-cell layout-item-0" style="width: 50%; padding-right:380px" >
+									<h1>Menu Hari Ini</h1>
+								</div>
+								<div class="art-layout-cell layout-item-0" style="width: 50%" >
+									<h1>Highlights</h1>
+								</div>
+								</div>
+							</div>
+							<div class="art-content-layout-wrapper layout-item-1">
+							<div class="art-content-layout layout-item-2">
+								<div class="art-content-layout-row">
+									<div class="art-layout-cell layout-item-5" style="width: 40%" >
+										<p><img width="310" height="210" src="halamanutama/images/c.jpg" alt="" class=""></p>
+										<p>Pizza roll baked mini dibuat dengan bumbu-bumbu pizza yang sering dibuat direstoran.&nbsp;</p>
+										<p><a href="#">Read more...</a></p>
+									</div>
+									<div class="art-layout-cell layout-item-5" style="width: 40%" >
+										<p><img width="310" height="210" src="halamanutama/images/d.jpg" alt="" class=""></p>
+										<p>Mie Japanese dengan rasa gurih berpadu dengan daun bawang yang nikmat.&nbsp;</p>
+										<p><a href="#">Read more...</a></p>
+									</div>
+								<div class="art-layout-cell layout-item-6" style="width: 30%" >
+									<div class="newsdate">
+									<p style="padding: 0; margin: -10px 0 -10px; font-size: 36px">20</p>
+									<p>Jan</p>
+									</div>
+									<p style="padding-right: 20px"><span style="font-weight: bold;">Sup daging lobak</span><br>
+									Santap siang atau malam terasa kurang lengkap bila tidak ada sup.</p>
+									<br clear="all">
+									<div class="newsdate">
+									<p style="padding: 0; margin: -10px 0 -10px; font-size: 36px">12</p>
+									<p>Feb</p>
+									</div>
+									<p style="padding-right: 20px"><span style="font-weight: bold;">Bandeng presto bumbu cabai</span><br>
+									Hidangan yang satu ini tak bisa diragukan lagi kelezatan dan kenikmatanya.</p>
+									<br clear="all">
+									<div class="newsdate">
+									<p style="padding: 0; margin: -10px 0 -10px; font-size: 36px">04</p>
+									<p>Ags</p>
+									</div>
+									<p style="padding-right: 20px"><span style="font-weight: bold;">Udang masak kolio</span><br>
+									Mari Kita buat udang masak lokio yang cocok disantap pada siang hari dan malam hari.<br>
+									<br></p>
+									<p><a href="#" class="art-button">See more</a></p>
+								</div>
+								</div>
+							</div>
+							</div>
+							</div>	
+					</article>
+					</div>
+					</div>
+				</div>
+			</div>
+		 <footer class="art-footer clearfix">
+<div class="footer"; style="color:white"> 
+<center> Copyright &copy; 2018. All rights reserved. Designed and developed by YeniRosandi_1617051034 MayaAkhriza_1617051017 AdeliaNadaEffendi_1617051072</center></div>
+</footer>
+ </div>
+</div>
+
+</body></html>
